@@ -1,0 +1,29 @@
+{
+  "name": "wedding-seating",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host",
+    "template": "node scripts/make-guest-template.mjs"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.13",
+    "jspdf": "^3.0.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "exceljs": "^4.4.0",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.7"
+  }
+}

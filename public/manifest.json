@@ -1,0 +1,17 @@
+{
+  "name": "婚宴排桌",
+  "short_name": "婚宴排桌",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#5c1420",
+  "theme_color": "#5c1420",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
