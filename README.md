@@ -106,8 +106,41 @@ npm run template   # 重新生成 public/宴请名单模板.xlsx
 | **构建命令** | `npm run build` |
 | **输出目录** | `dist` |
 | Node 版本 | 18+（建议 20） |
+| 框架预设 | Vite（有则选 Vite；没有选 Other） |
 
-详细点击步骤见下文「用 Vercel / Netlify 部署」。
+---
+
+## 用 Vercel 部署（推荐，免费）
+
+1. 打开 [https://vercel.com](https://vercel.com)，用 **GitHub** 账号登录（Continue with GitHub）。
+2. 点右上角 **Add New… → Project**。
+3. 在列表里找到本仓库（如 `wedding-seating`），点 **Import**。  
+   - 若看不到：点 **Adjust GitHub App Permissions**，勾选该仓库权限后刷新。
+4. 配置（多数会自动填好）：
+   - **Framework Preset**：`Vite`
+   - **Build Command**：`npm run build`
+   - **Output Directory**：`dist`
+   - **Install Command**：`npm install`
+5. 点 **Deploy**，等 1～2 分钟。
+6. 成功后会得到形如 `https://xxx.vercel.app` 的公网地址。可用手机浏览器直接打开。
+
+以后往 GitHub `main`/`master` 推送代码，Vercel 会自动重新部署。
+
+---
+
+## 用 Netlify 部署
+
+1. 打开 [https://app.netlify.com](https://app.netlify.com)，用 **GitHub** 登录。
+2. 点 **Add new site → Import an existing project**。
+3. 选 **GitHub**，授权后选中本仓库。
+4. 填写：
+   - **Branch to deploy**：`master`（或 `main`）
+   - **Build command**：`npm run build`
+   - **Publish directory**：`dist`
+5. 点 **Deploy site**。
+6. 完成后在站点设置里可改成更短的域名（Domain settings）。
+
+同样：推送到 GitHub 后会自动更新线上版本。
 
 ---
 
