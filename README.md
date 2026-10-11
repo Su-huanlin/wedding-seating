@@ -5,7 +5,8 @@
 - **形态**：前端单页应用（React + Vite + TypeScript），数据存在本机浏览器，无需后端。
 - **适合**：自己或司仪在电脑上排桌、导出打印；手机可打开查看与小改，精细排桌仍建议 PC。
 
-在线演示（部署后把链接写在这里）：_待填_
+- **仓库**：[https://github.com/Su-huanlin/wedding-seating](https://github.com/Su-huanlin/wedding-seating)
+- **在线演示**（用 Vercel/Netlify 部署后把链接写在这里）：_待填_
 
 ---
 
